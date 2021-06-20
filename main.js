@@ -4,7 +4,10 @@ xmlhttp.onreadystatechange = function() {
         var apiResult = JSON.parse(this.responseText);
 
         //Code Dealing With The API Data Goes Here
+        console.log(apiResult);
         console.log(apiResult.name);
+        console.log(apiResult.weather[0].description);
+        
 
         function showCity() {
             // apiResult.sort(function(a, b){return 0.5 - Math.random()});
@@ -15,6 +18,15 @@ xmlhttp.onreadystatechange = function() {
             cityName.appendChild(cityText);
         };
         showCity();
+
+        function showWeatherDescrip() {
+            var weatherSection = document.getElementById("main-section");
+            var weatherDescrip = document.createElement("p");
+            weatherSection.appendChild(weatherDescrip);
+            var weatherText = document.createTextNode(apiResult.weather[0].description);
+            weatherDescrip.appendChild(weatherText);
+        };
+        showWeatherDescrip();
         
     }
 };
