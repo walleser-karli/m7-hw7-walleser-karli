@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Viaoda Libre', cursive;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #37505C;
+    padding: 15px 2%;
+    font-size: 2rem;
+}
+
+main {
+    font-family: 'Varela Round', sans-serif;
+    background-color: #53A2BE;
+    padding: 70px 5% 0;
+    font-size: 1.25rem;
+    flex: 1 0 auto;
+}
+
+main img {
+    width: 100%;
+    max-width: 200px;
+}
+
+footer {
+    background-color: #F6BE9A;
+    padding: 15px 4%;
+    color: #37505C;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
